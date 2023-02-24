@@ -1,0 +1,99 @@
+<!-- 
+ * Name: Het Patel
+ * Student ID: 100849572
+ * Course Code: WEBD6201-06
+ -->
+
+<!-- Starting of HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./Lab2/style/style.css">
+</head>
+
+<body>
+  <!-- Main Header -->
+  <header>
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- Navigate to homepage -->
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+           <!-- Navigate to product page -->
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Products</a>
+          </li>
+          <!-- Navigate to service page -->
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <!-- Navigate to about page -->
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+          </li>
+          <!-- Navigate to contact page -->
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <!-- Navigate to login page -->
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login page</a>
+          </li>
+          <!-- Navigate to register page -->
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Register form</a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+        <!-- Login form -->
+        <h1>Login</h1>
+        <form name="loginform" method="post">
+          <div class="form-group">
+            <!-- Label for username -->
+            <label for="exampleInputUserName">UserName</label>
+            <input type="text" class="form-control" id="exampleInputUserName" placeholder="Enter your User Name here">
+          </div>
+          <!-- Lable for password -->
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password here">
+          </div>
+          <!-- Login button -->
+          <button id = "login-button" type="submit" onclick="showLogin(loginform)" class="btn btn-primary">Login</button>
+        </form>
+        <!-- Give a registration link to redirect directly -->
+        <p class="text-center text-muted small">
+            Don't have an account? 
+            <a href="register.html">Register Here!</a>
+        </p>
+  </header>
+
+<!-- Giving the ID to recongnize the error message -->
+<div id="errorMessage" class="error-msg" styles="display:none">
+
+</div>
+
+  <!-- Script Section-->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./Lab2/scripts/app.js"></script>
+  <script src="./Lab2/scripts/registration.js"></script>
+  <script src="./Lab2/scripts/login.js"></script>
+</body>
+
+</html>

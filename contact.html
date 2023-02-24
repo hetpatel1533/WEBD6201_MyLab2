@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./Lab2/style/style.css">
+</head>
+
+<body>
+  <!-- Main Header -->
+  <header>
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Register form</a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <!-- Main Content -->
+  <main class="container py-5 text-center">
+    <h2>Contact us</h2>
+  </main>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputFirstName">FirstName</label>
+        <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Enter First Name here">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputLastName">LastName</label>
+        <input type="text" class="form-control" id="exampleInputLastName" placeholder="Enter Last Name here">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email here">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password here">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputShortMessage">ShortMessage</label>
+        <input type="text" class="form-control" id="exampleInputShortMessage" placeholder="Enter any short message here">
+      </div>
+      <button id = "submit-button" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </header>
+
+ 
+
+  <!-- Script Section-->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./Lab2/scripts/app.js"></script>
+  <script src="./Lab2/scripts/registration.js"></script>
+  <script src="./Lab2/scripts/login.js"></script>
+</body>
+
+</html>

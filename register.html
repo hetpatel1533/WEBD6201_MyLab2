@@ -1,0 +1,115 @@
+<!-- 
+ * Name: Het Patel
+ * Student ID: 100849572
+ * Course Code: WEBD6201-06
+ -->
+
+<!-- Starting of HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registartion Page</title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./Lab2/style/style.css">
+</head>
+
+<body>
+  <!-- Main Header -->
+  <header>
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- Navigate to homepage -->
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <!-- Navigate to product page -->
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Products</a>
+          </li>
+          <!-- Navigate to service page -->
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <!-- Navigate to about page -->
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+          </li>
+          <!-- Navigate to contact page -->
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacts</a>
+          </li>
+          <!-- Navigate to login page -->
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login page</a>
+          </li>
+          <!-- Navigate to register page -->
+          <li class="nav-item">
+              <a class="nav-link" href="register.html">Register form</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+        <!-- Registration form -->
+        <h1>Registration form</h1>
+        <p>Create your own account. It may take few minutes to complete.</p>
+        <form>
+          <!-- Label of first name -->
+          <div class="form-group">
+            <label for="exampleInputUserFirstName">FirstName</label>
+            <input type="text" class="form-control" id="exampleInputUserFirstName" minlength="2" placeholder="Enter First Name here" required>
+          </div>
+          <!-- Lable of last name -->
+          <div class="form-group">
+            <label for="exampleInputUserLastName">LastName</label>
+            <input type="text" class="form-control" id="exampleInputUserLastName" minlength="2" placeholder="Enter Last Name here" required>
+          </div>
+          <!-- Lable of Email -->
+          <div class="form-group">
+            <label for="exampleInputUserEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputUserEmail1" minlength="8" aria-describedby="emailHelp" placeholder="Enter email here" required>
+          </div>
+          <!-- Label of Password -->
+          <div class="form-group">
+            <label for="exampleInputUserPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputUserPassword1" minlength="6" placeholder="Enter your Password here" required>
+          </div>
+          <!-- Lable of confirm password -->
+          <div class="form-group">
+            <label for="exampleInputUserConfirmPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputUserConfirmPassword1" minlength="6" placeholder="Enter your Password again" required>
+          </div>
+          <!-- Button of register -->
+          <button id = "register-button" type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <!-- Give a login link to redirect directly -->
+        <p class="text-center text-muted small">
+          Already have account,  
+          <a href="login.html">Sign in</a>
+        </p>
+  </header>
+
+<!-- Giving the ID to recongnize the error message -->
+    <div id="errorMessage" class="error-msg" styles="display:none">
+
+    </div>
+
+  <!-- Script Section-->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./Lab2/scripts/app.js"></script>
+  <script src="./Lab2/scripts/registration.js"></script>
+  <script src="./Lab2/scripts/login.js"></script>
+</body>
+
+</html>
